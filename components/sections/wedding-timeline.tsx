@@ -21,8 +21,8 @@ const cinzel = Cinzel({
 // const { groomNickname, brideNickname } = siteConfig.couple
 const ceremonyTime = siteConfig.ceremony.time
 const guestsTime = siteConfig.ceremony.guestsTime ?? "1:30 PM"
-const ceremonyVenue = siteConfig.ceremony.venue
-const receptionVenue = siteConfig.reception.venue
+const ceremonyVenue = siteConfig.ceremony.location
+const receptionVenue = siteConfig.reception.location
 
 // Colors sourced from globals.css @theme inline — edit there to update everywhere
 // This section sits on a darker background, so render timeline text/icons in white.
@@ -46,31 +46,31 @@ interface TimelineEvent {
 
 const timelineEvents: TimelineEvent[] = [
   {
-    time: "12:00 PM",
+    time: `${siteConfig.ceremony.entourageTime}`,
     title: "Arrival",
     // description: "Please arrive on time to find your seat, settle in, and get ready for the celebration.",
-    location: ceremonyVenue,
+    location: `${siteConfig.ceremony.location}`,
     icon: GuestsIcon,
     imageSrc: "/weddingtimeline/arrivalimage.png",
-  },
+  },  
   {
-    time: "1:00 PM",
+    time: `${siteConfig.ceremony.time}`,
     title: "Wedding Ceremony",
     // description: `Join us as ${groomNickname} & ${brideNickname} exchange vows and begin their life together.`,
-    location: ceremonyVenue,
+    location: `${siteConfig.ceremony.location}`,
     icon: RingsIcon,
     imageSrc: "/weddingtimeline/WeddingCeremony.png",
   },
   {
-    time: "2:30 PM",
+    time: `11:00 AM`,
     title: "Photos",
     // description: "We are having an unplugged ceremony, meaning we kindly ask all guests to put away their phones and cameras. We want everyone to be fully in the moment with us. Don't worry—our professional photographer will capture all the special moments, and we'll be happy to share them with you later!",
-    location: ceremonyVenue,
+    location: `${siteConfig.ceremony.location}`,
     icon: RingsIcon,
     imageSrc: "/weddingtimeline/PhotoSession.png",
   },
   {
-    time: "4:00 PM",
+    time: `${siteConfig.reception.time}`,
     title: "Cocktail Hour",
     // description: "Enjoy drinks and light bites as we transition into the reception and mingle with guests.",
     location: receptionVenue,
@@ -78,7 +78,7 @@ const timelineEvents: TimelineEvent[] = [
     imageSrc: "/weddingtimeline/CockTailHour.png",
   },
   {
-    time: "5:30 PM",
+    time: "2:00 PM",
     title: "Program Starts",
     // description: `Celebrate the grand entrance of ${groomNickname} & ${brideNickname} and the start of the evening festivities.`,
     location: receptionVenue,

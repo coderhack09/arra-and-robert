@@ -34,22 +34,12 @@ export function LoveStory() {
         theme="light"
         layout="image-left"
         isFirst={true}
-        title="The Unexpected Beginning"
-        imageSrc="/mobile-background/couple (1).jpg"
+        // title="The Unexpected Beginning"
+        imageSrc="/mobile-background/couple (1).webp"
         text={
           <>
             <p className="mb-4">
-            Vince and Era’s story didn’t begin with a simple “Hi” or “Hello.”
-It began with… a Personal Data Sheet.
-Yes, you read that right.
-<br />
-<br />
-LinkedIn who? 😭
-<br />
-<br />  
-Sometime in late 2023, Vince already knew of Era—her name, her face.
-Enough to make an impression. Enough to make him quietly think,
-👀 “Siya na 'to.”
+            By God’s grace, our story began with a simple meeting at Metrobank during a BOTP-NAC training—an ordinary encounter that would one day lead us here.
             </p>
            
           </>
@@ -60,19 +50,12 @@ Enough to make an impression. Enough to make him quietly think,
       <StorySection
         theme="dark"
         layout="image-right"
-        imageSrc="/mobile-background/couple (5).jpg"
-        title="Clueless but Thriving"
+        imageSrc="/mobile-background/couple (2).webp"
+        // title="Clueless but Thriving"
         text={
           <>
             <p>
-            Era, on the other hand?
-Clueless. Living her life. Thriving. Unbothered.
-<br />
-<br />
-Fast forward to the last few days of January—
-Era officially joined the Department of Agriculture.
-And just like that, the girl Vince once only knew on paper
-became his colleague.
+            From classmates, we became text mates. What started with lighthearted exchanges after a night of laughter with friends, and a quiet gesture of him bringing me back to my apartment the next day, became the gentle beginning of something deeper.
             </p>
           </>
         }
@@ -83,17 +66,12 @@ became his colleague.
         theme="light"
         layout="image-left"
         isLast={true}
-        imageSrc="/mobile-background/couple (3).jpg"
-        title="Just Work… or So They Say"
+        imageSrc="/mobile-background/couple (6).webp"
+        // title="Just Work… or So They Say"
         text={
           <>
             <p>
-            At first, everything was normal.
-Work. Papers. Deadlines.
-Walang halong landi. Promise.
-<br />
-<br />
-Until Valentine’s Day came.
+            In time came meaningful conversations, shared dates, and a love that steadily grew. Though we are different in personality, humor, and lifestyle, we learned that love is not about having no differences, but about choosing to meet halfway, extending grace, and holding on to one another through every season.
             </p>
            
           </>
@@ -103,22 +81,12 @@ Until Valentine’s Day came.
             <StorySection
         theme="dark"
         layout="image-right"
-        imageSrc="/frontboxes/box-3.jpg"
-        title="The Chocolate Move"
+        imageSrc="/mobile-background/couple (4).webp"
+        // title="The Chocolate Move"
         text={
           <>
             <p>
-            Assigned at the Receiving Section, Era was simply doing her job when Vince approached her and said,
-“Ma’am, pa-receive.”
-<br />
-<br />
-Very work-appropriate…
-except the “document” turned out to be a Goya chocolate tucked inside an envelope, with a small note:
-Happy Valentine’s Day.
-<br />
-<br />
-Smooth? Medyo.
-Halata? Slightly. 😂
+            Ours is not a story of perfect love, but of faithful love—one shaped by commitment, strengthened by understanding, and guided by God’s hand from the very beginning. And now, the two of us who once met in a training room are being led to the altar, ready to begin a lifetime of love, devotion, and forever.
             </p>
           </>
         }
@@ -129,96 +97,22 @@ Halata? Slightly. 😂
         theme="light"
         layout="image-left"
         isLast={true}
-        imageSrc="/mobile-background/couple (2).jpg"
-        title="Sabay-Uwi Chronicles"
+        imageSrc="/frontboxes/box_3.JPG"
+        // title="Sabay-Uwi Chronicles"
         text={
           <>
             <p>
-            From there, things slowly unfolded—
-from casual office encounters to quiet sabay-uwi moments.
+            To this moment.
+            <br />
+To this promise. 
 <br />
-<br />
-Both from Taguig (convenient 👀), Vince—who was staying at the DA dorm—started joining Era on her commute, casually saying it was because he “missed his mom.”
-(We all know… hindi lang si mother ang dahilan 😌)
+To a lifetime of choosing each other, every single day.
             </p>
            
           </>      
         }
       />
-                  {/* SECTION 4: Middle - Light */}
-                  <StorySection
-        theme="dark"
-        layout="image-right"
-        imageSrc="/frontboxes/box-2.jpg"
-        title="The Q.Ave MRT Moment"
-        text={
-          <>
-            <p>
-            And then came one of the most unforgettable moments of their story— Q. Ave Station.
-<br />
-<br />
-Out of nowhere, Era said:
-“Wag mo ako bentahan ng insurance ah.”
-<br />
-<br />
-Aray.
-<br />
-<br />
-Imagine getting rejected…
-sa bagay na hindi mo naman ino-offer. 😭
-<br />
-<br />
-Because what Era didn’t know was this—
-Vince was never offering something temporary.
-<br />
-<br />
-Hindi insurance.
-Hindi panandalian.
-            </p>
-          </>
-        }
-      />
-
-      {/* SECTION 5: Bottom - Dark */}
-      <StorySection
-        theme="light"
-        layout="image-left"
-        isLast={true}
-        imageSrc="/frontboxes/image-1679956003007106.jpg"
-        title="A Lifetime Choice"
-        text={
-          <>
-            <p>
-            What he was offering…
-was a lifetime.
-A love that stays.
-A choice he would make—every single day.
-<br />
-<br />
-Maybe hindi agad nakita ni Era.
-Hindi agad naramdaman.
-<br />
-<br />
-But through every sabay-uwi,
-every small moment,
-every quiet effort—
-<br />
-<br />
-she slowly found herself choosing him, too.
-<br />
-<br />
-Until one day, it wasn’t confusing anymore.
-<br />
-<br />
-From a name on a piece of paper,
-he became her person.
-Her constant.
-Her home.
-            </p>
-           
-          </>      
-        }
-      />
+                 
       {/* Footer Decoration */}
       <div className="bg-motif-cream pt-8 sm:pt-10 md:pt-12 pb-16 sm:pb-20 md:pb-24 text-center text-motif-deep z-0 relative px-4">
         <div className="w-12 sm:w-16 h-[1px] bg-motif-silver mx-auto mb-4 sm:mb-6 opacity-60"></div>

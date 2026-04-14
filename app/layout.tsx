@@ -1,22 +1,23 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Great_Vibes, Inter, Imperial_Script, Cinzel } from "next/font/google"
+import localFont from "next/font/local"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { siteConfig } from "@/content/site"
 import { ClientLayout } from "@/components/client-layout"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://vince-and-era.weddinginvitationrsvp.com/"
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://arra-and-robert.weddinginvitationrsvp.com/"
 const canonicalUrl = siteUrl.replace(/\/$/, "")
-const desktopHero = "/Details/LinkPreview.jpg"
-const mobileHero = "/Details/LinkPreview.jpg"
+const desktopHero = "/Details/PreviewLink.jpg"
+const mobileHero = "/Details/PreviewLink.jpg"
 const eventImageUrl = `${canonicalUrl}${desktopHero}`
 
 // Hardcoded Cloudinary URL — image is already uploaded and always accessible via CDN.
 // f_jpg forces JPEG so all OG scrapers (iMessage, Viber, Facebook, etc.) can display it.
 // The public-folder URL is kept only as a fallback in the images array below.
 const OG_IMAGE_CLOUDINARY =
-  "https://res.cloudinary.com/detbgvt1c/image/upload/f_jpg,q_auto,w_1200,h_630,c_fill/wedding-projects/vince-and-era/Details/LinkPreview.jpg"
+  "https://res.cloudinary.com/dlkznubkj/image/upload/f_jpg,q_auto,w_1200,h_630,c_fill/wedding-projects/arra-and-robert/Details/PreviewLink.jpg"
 const OG_IMAGE_FALLBACK = `${canonicalUrl}${desktopHero}`
 
 const coupleNames = `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}`
@@ -69,6 +70,17 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const greatVibes = Great_Vibes({ subsets: ["latin"], weight: "400", variable: "--font-serif" })
 const imperialScript = Imperial_Script({ subsets: ["latin"], weight: "400", variable: "--font-imperial-script" })
 const cinzel = Cinzel({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-cinzel" })
+const brittany = localFont({
+  src: "../Font/brittany-signature-script/BrittanySignatureScript.ttf",
+  variable: "--font-brittany",
+  display: "swap",
+})
+
+const playlistScript = localFont({
+  src: "../Font/playlist-script/Playlist Script.otf",
+  variable: "--font-playlist-script",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(canonicalUrl),
@@ -196,7 +208,7 @@ export default function RootLayout({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body
-        className={`${inter.variable} ${greatVibes.variable} ${imperialScript.variable} ${cinzel.variable} font-inter antialiased text-foreground`}
+        className={`${inter.variable} ${greatVibes.variable} ${imperialScript.variable} ${cinzel.variable} ${brittany.variable} ${playlistScript.variable} font-inter antialiased text-foreground`}
       >
         <ClientLayout>
           {children}

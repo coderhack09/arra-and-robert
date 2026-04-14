@@ -1,10 +1,10 @@
 export const siteConfig = {
   couple: {
-    bride: "Ma. Geraldine B. Divina", //Noenyl Bryle M. Gonzaga
-    brideNickname: "Era", //Ltryl
-    groom: "Vincent Ivan M. Ferrer", //Ltryl B. Benitez
-    groomNickname: "Vince",
-    monogram:"/monogram/newMonogram.png" ,//Ltryl
+    bride: "Arra Rauvel P. Villarin", //Noenyl Bryle M. Gonzaga
+    brideNickname: "Arra Rauvel", //Ltryl
+    groom: "Robert John O. Cosico", //Ltryl B. Benitez
+    groomNickname: "Robert",
+    monogram:"/monogram/monogram.png" ,//Ltryl
     backgroundMusic:"/background_music//Ed Sheeran - The Joker And The Queen (Lyrics) feat. Taylor Swift.mp3"
   },
   googleAPI:{
@@ -19,50 +19,51 @@ export const siteConfig = {
     googleShare: "https://docs.google.com/spreadsheets/d/1NzySlITNcY__DZtbF57EVfVjvy5SCEw35adaofzaioQ/edit?usp=sharing",
   },
   wedding: {
-    date: "April 25, 2026",
-    time: "1:00 PM",
-    venue: "Sto. Niño De Taguig Parish",
+    date: "July 11, 2026",
+    time: "10:00 AM",
+    venue: "St. John Bosco Parish Church",
     tagline: "are getting married!",
     theme: "Our wedding palette is inspired by timeless elegance and warmth.Motif Colors: Champagne Gold, Soft Beige, Warm Soft Brown",
     motif: "#BBCED5, #B9C3A8, #F3D8C5, #D1C4D4, #ECD8BA, #F4E8D8, #E1DCCF",
   },
   details: {
     rsvp: {
-      deadline: "April 10, 2026.",
-      contact: "Ma. Geraldine B. Divina",
+      deadline: "June 10, 2026.",
+      contact: "Arra Rauvel P. Villarin",
       phone: "to be announced",
     },
   },
   giftRegistry: {
     QR_1:{
     id: "Gcash",
-    src: "/QR/NewQRgcash.png",
+    src: "/QR/pleaseProvideQR.png",
     label: "Gcash",
-    accountNumber: "Gcash: M* GE******E D.",
+    accountNumber: "Gcash: please provide QR",
     },
     QR_2:{
     id: "Landbank",
-    src: "/QR/newLandBank.png",
+    src: "/QR/pleaseProvideQR.png",
     label: "Landbank",
-    accountNumber: "Landbank: Vincent Ivan M. Ferrer",
+    accountNumber: "Landbank: please provide QR",
     }
   },
   ceremony: {
-    location: "Sto. Niño De Taguig Parish",
-    venue: "Sampaloc St. Zone 1. Signal Village, Taguig City",
-    date: "April 25, 2026",
+    location: "St. John Bosco Parish Church",
+    venue: "Antonio Arnaiz Avenue, corner Amorsolo Street, Makati City, 1200 Metro Manila",
+    map: "https://maps.app.goo.gl/a3UyxxuGzoU8aAuSA",
+    date: "July 11, 2026",
     day: "Saturday",
-    time: "1:00 PM",
-    entourageTime: "12:00 PM",
-    guestsTime: "12:30 PM",
-    image: "/Details/ceremony.png",
+    time: "10:00 AM",
+    entourageTime: "9:00 AM",
+    guestsTime: "9:30 AM",
+    image: "/Details/ceremony.webp",
   },
   reception: {
-    location: "Mahogany Farm Events Place Farm Hall",
-    venue: "Samama Compound 1, Brgy. Ligid-Tipas, Taguig City",
-    date: "April 25, 2026",
-    time: "2 :30 PM",
-    image: ["/Details/reception2.png","/Details/reception1.png"],
+    location: "Diamond Hotel Philippines",
+    venue: "Roxas Boulevard, Corner Dr. J. Quintos Street, Manila, 1000 Metro Manila",
+    date: "July 11, 2026",
+    time: "12:00 NN",
+    image: ["/Details/reception.webp","/Details/reception2.webp","/Details/reception3.webp"],
   },                          
   dressCode: {
       theme: "SEMI-FORMAL",
@@ -72,14 +73,21 @@ export const siteConfig = {
       female: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
       notes: "Ninong: Barong and Black Slacks\n Ninang: Pilipiniana Inspired Gown",
       photo: "/Details/sponsors.png",
-      palette: "#ECD8BA, #F4E8D8, #E1DCCF"
+      palette: "#ECD8BA, #F4E8D8"
+    },
+    entourage: {
+      gents: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
+      ladies: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
+      notes: "You may glam up in theses shades.",
+      photo: "/Details/entourage.png",
+      palette: "#4B2E2B, #F7E7CE, #F5E6D3",
     },
     guests: {
       gents: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
       ladies: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
       notes: "You may glam up in theses shades.",
-      photo: "/Details/Guest.png",
-      palette: "#BBCED5, #B9C3A8, #F3D8C5, #D1C4D4, #ECD8BA, #F4E8D8, #E1DCCF",
+      photo: "/Details/guest.png",
+      palette: "#6B3A0F, #4A1F05, #2B0F02, #D6B49A, #E8DCC3, #E6C28B, #E1DCCF",
     },
     note: "We kindly request our guests to dress in attire following our wedding palette."
   },
@@ -112,7 +120,7 @@ Now, as they prepare to say yes before God and the people they love most, Cather
   },
   snapShare: {
     googleDriveLink: "https://drive.google.com/drive/folders/1OHc4gq4VHPequrPTjIrV6-YpZ5ctk9lo?usp=sharing",
-    hashtag: ["#VINCEgotMesmERAized","#heaVINCENTforERA"],
+    hashtag: ["#ROBERTgotMesmARRAized","#heartROBERTforARRA"],
     instructions: "Please scan this QR Code, create a folder with your name and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
 }

@@ -28,10 +28,10 @@ export interface StaggeredMenuProps {
 }
 
 // Colors sourced from globals.css @theme inline — edit there to update everywhere
-const HERO_ACCENT = 'var(--color-motif-deep)';      // toggle + accent
-const HERO_CREAM = 'var(--color-motif-cream)';      // light surface
-const MENU_PANEL_BG = 'var(--color-motif-deep)';    // panel background
-const MENU_TEXT = 'var(--color-motif-cream)';       // menu text / links
+const HERO_ACCENT = 'var(--color-motif-accent)';      // toggle + accent
+const HERO_CREAM = 'var(--color-motif-deep)';      // light surface
+const MENU_PANEL_BG = 'var(--color-motif-accent)';    // panel background
+const MENU_TEXT = 'var(--color-motif-deep)';       // menu text / links
 
 export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
   position = 'right',

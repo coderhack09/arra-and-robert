@@ -7,19 +7,19 @@ import { siteConfig } from "@/content/site"
 import { getCloudinaryUrl } from "@/lib/cloudinary"
 
 const desktopImages: string[] = [
-  '/gallery/couple (1).jpg',
-  '/gallery/couple (2).jpg',
-  '/gallery/couple (3).jpg',
-  '/gallery/couple (4).jpg',
-  '/gallery/couple (5).jpg',
+  '/desktop-background/couple (1).webp',
+  '/desktop-background/couple (2).webp',
+  '/desktop-background/couple (3).webp',
+  '/desktop-background/couple (4).webp',
+  '/desktop-background/couple (6).webp',
 ].map((src) => getCloudinaryUrl(src, { width: 1920, quality: "auto" }))
 
 const mobileImages: string[] = [
-  '/mobile-background/couple (1).jpg',
-  '/mobile-background/couple (2).jpg',
-  '/mobile-background/couple (3).jpg',
-  '/mobile-background/couple (4).jpg',
-  '/mobile-background/couple (5).jpg',
+'/mobile-background/couple (1).webp',
+  '/mobile-background/couple (2).webp',
+  '/mobile-background/couple (3).webp',
+  '/mobile-background/couple (4).webp',
+  '/mobile-background/couple (6).webp'
 ].map((src) => getCloudinaryUrl(src, { width: 768, quality: "auto" }))
 
 const SHOW_BUTTERFLIES = false
@@ -132,10 +132,10 @@ export function Hero() {
             }}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-t from-motif-deep/90 via-motif-deep/70 to-transparent z-0" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-motif-deep/75 z-0" />
-        <div className="absolute inset-0 mix-blend-screen" style={{ background: 'radial-gradient(circle at top, color-mix(in srgb, var(--color-motif-deep) 30%, transparent), transparent 55%)' }} />
-        <div className="absolute inset-0 opacity-70 animate-[pulse_9s_ease-in-out_infinite]" style={{ background: 'radial-gradient(circle at 20% 30%, color-mix(in srgb, var(--color-motif-deep) 28%, transparent), transparent 35%)' }} />
+        {/* Bottom vignette — lifts text without crushing the photo */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/15 to-transparent z-0" />
+        {/* Top vignette — subtle shadow for navbar readability */}
+        <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-black/35 to-transparent z-0" />
       </div>
 
       {SHOW_BUTTERFLIES && (
@@ -455,37 +455,41 @@ export function Hero() {
         </>
       )}
 
-      <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 flex flex-col items-center justify-center min-h-screen pt-20 sm:pt-24 md:pt-28 pb-10 sm:pb-12 md:pb-16">
+      <div className="relative z-10 w-full container mx-auto px-5 sm:px-8 md:px-12 lg:px-16 flex flex-col items-center justify-center min-h-screen pt-20 sm:pt-24 pb-12 sm:pb-16">
         <div
-          className={`w-full max-w-3xl text-center space-y-3 sm:space-y-4 md:space-y-5 transition-all duration-1000 ease-out ${
+          className={`w-full max-w-4xl flex flex-col items-center gap-5 sm:gap-7 md:gap-9 transition-all duration-1000 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          {/* Main Invitation Text */}
-          <div className="space-y-2 sm:space-y-3 md:space-y-4">
-            {/* Names & Tagline */}
-            <h1
-              className={`${cormorant.className} text-xs sm:text-sm md:text-base lg:text-lg tracking-[0.24em] sm:tracking-[0.28em] uppercase font-medium text-center text-motif-cream`}
-              style={{
-                textShadow: "0 2px 10px rgba(0,0,0,0.75)",
-              }}
-            >
-              Together with our families,
-              <br />
-              we joyfully invite you to witness our union.
-            </h1>
-            <h1
-              className={`${cinzelRegular.className} text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl drop-shadow-2xl`}
-                style={{
-                  color: 'var(--color-motif-cream)',
-                  textShadow: "0 0 24px rgba(0,0,0,0.9)",
-                  fontWeight: 400,
-                }}
-            >
-              <span className="block">{brideName}</span>
-              <span className="block">&</span>
-              <span className="block">{groomName}</span>
-            </h1>
+          {/* Tagline */}
+          <p
+            className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base tracking-[0.28em] sm:tracking-[0.32em] uppercase font-medium text-center text-motif-cream/90`}
+            style={{ textShadow: "0 2px 10px rgba(0,0,0,0.65)" }}
+          >
+            Together with our families,
+            <br />
+            we joyfully invite you to witness our union.
+          </p>
+
+          {/* Couple Names */}
+          <div
+            className="w-full flex flex-col leading-none"
+            style={{
+              fontFamily: 'var(--font-playlist-script)',
+              color: 'var(--color-motif-cream)',
+              textShadow: "0 2px 28px rgba(0,0,0,0.75)",
+              fontWeight: 400,
+            }}
+          >
+            <span className="block text-left text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] drop-shadow-2xl">
+              {siteConfig.couple.groomNickname}
+            </span>
+            <span className="block text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl py-1 sm:py-2 opacity-80">
+              +
+            </span>
+            <span className="block text-right text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] drop-shadow-2xl">
+              {siteConfig.couple.brideNickname}
+            </span>
           </div>
 
           {/* Date & Time block */}
@@ -554,19 +558,15 @@ export function Hero() {
           </div>
 
           {/* Venue */}
-          <div className="space-y-1 sm:space-y-1.5 pt-1 sm:pt-2">
-            <p
-              className={`${cinzel.className} text-xs sm:text-sm md:text-base lg:text-lg uppercase tracking-[0.22em] sm:tracking-[0.26em] md:tracking-[0.3em] text-motif-cream font-medium`}
-              style={{
-                textShadow: "0 2px 18px rgba(0,0,0,0.9)",
-              }}
-            >
-              {siteConfig.ceremony.location}
-            </p>
-          </div>
+          <p
+            className={`${cinzel.className} text-xs sm:text-sm md:text-base lg:text-lg uppercase tracking-[0.22em] sm:tracking-[0.26em] md:tracking-[0.3em] text-motif-cream font-medium text-center`}
+            style={{ textShadow: "0 2px 18px rgba(0,0,0,0.9)" }}
+          >
+            {siteConfig.ceremony.location}
+          </p>
 
           {/* Call-to-action section */}
-          <div className="pt-3 sm:pt-4 md:pt-5 flex flex-col gap-3 sm:gap-4 items-center max-w-2xl mx-auto w-full px-4">
+          <div className="flex flex-col gap-3 sm:gap-4 items-center max-w-2xl mx-auto w-full px-4">
             <p
               className={`${cinzel.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base uppercase tracking-[0.24em] sm:tracking-[0.28em] text-motif-cream/95 font-normal leading-relaxed text-center px-4`}
               style={{

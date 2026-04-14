@@ -7,39 +7,47 @@ interface HeroProps {
   visible: boolean;
 }
 
-// Background (beige)          #F5EFE6
-// Section Alternate           #E8DCCB
-// Soft Brown (headings)       #8B6F5A
-// Deep Brown (accents/shadow) #4E3B31
-// Champagne Gold (buttons)    #D6BFA3
-// Champagne Hover (richer)    #C9A989
-// Borders / Dividers          #F2E4D3
-  // Palette tuned for champagne gold + beige + soft brown
- // Palette tuned to motif: sage green, muted sage, warm ivory, powder blue, steel blue, luxury silver
- const palette = {
-  deep: '--color-motif-deep',    // sage green — primary elegance, headings, borders
-  medium: '--color-motif-medium',  // soft muted sage — secondary text, subtle elements
-  accent: '--color-motif-accent',  // steel blue — deeper accent, hashtag, dividers
-  cream: '--color-motif-cream',   // warm ivory — surfaces, overlays, light text on dark
-  soft: '--color-motif-soft',    // powder blue — highlights, glow accents, progress fill
-  silver: '--color-motif-silver',  // luxury silver — neutral separators, track backgrounds
+// Palette mapped directly to the motif CSS vars defined in globals.css
+// --color-motif-deep    #A6846A  warm brown — headings / strong accents
+// --color-motif-medium  #C2A489  classic beige — body / mid tones
+// --color-motif-accent  #E5CFA7  champagne gold — buttons / highlights
+// --color-motif-cream   #F7F3EE  soft ivory — background / text on dark
+// --color-motif-soft    #EADBC8  light beige — cards / subtle fills
+// --color-motif-silver  #EDE6DD  neutral divider — borders / ghost tones
+const palette = {
+  deep:    'var(--color-motif-deep)',    // #A6846A
+  medium:  'var(--color-motif-medium)',  // #C2A489
+  accent:  'var(--color-motif-accent)',  // #E5CFA7
+  cream:   'var(--color-motif-cream)',   // #F7F3EE
+  soft:    'var(--color-motif-soft)',    // #EADBC8
+  silver:  'var(--color-motif-silver)',  // #EDE6DD
+};
+
+// Raw hex values for use inside rgba() where CSS vars cannot be used
+const hex = {
+  deep:   '166, 132, 106',  // #A6846A
+  medium: '194, 164, 137',  // #C2A489
+  accent: '229, 207, 167',  // #E5CFA7
+  cream:  '247, 243, 238',  // #F7F3EE
+  soft:   '234, 219, 200',  // #EADBC8
+  silver: '237, 230, 221',  // #EDE6DD
 };
 
 
 const desktopImages: string[] = [
-  '/gallery/couple (1).jpg',
-  '/gallery/couple (2).jpg',
-  '/gallery/couple (3).jpg',
-  '/gallery/couple (4).jpg',
-  '/gallery/couple (5).jpg'
+  '/desktop-background/couple (1).webp',
+  '/desktop-background/couple (2).webp',
+  '/desktop-background/couple (3).webp',
+  '/desktop-background/couple (4).webp',
+  '/desktop-background/couple (5).webp',
 ];
 
 const mobileImages: string[] = [
-'/mobile-background/couple (1).jpg',
-  '/mobile-background/couple (2).jpg',
-  '/mobile-background/couple (3).jpg',
-  '/mobile-background/couple (4).jpg',
-  '/mobile-background/couple (5).jpg'
+'/mobile-background/couple (1).webp',
+  '/mobile-background/couple (2).webp',
+  '/mobile-background/couple (3).webp',
+  '/mobile-background/couple (4).webp',
+  '/mobile-background/couple (6).webp'
 ];
 
 export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
@@ -121,20 +129,44 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
           </div>
         ))}
         
-        {/* Gradient Overlay - light champagne into beige, very soft so photo stays visible */}
-        <div 
+        {/* Top warm veil — deep warm brown fades into champagne gold, then clears */}
+        <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: 'linear-gradient(to bottom, var(--color-motif-deep)13, var(--color-motif-cream)47)'
+            background: `linear-gradient(
+              to bottom,
+              rgba(${hex.deep}, 0.30) 0%,
+              rgba(${hex.accent}, 0.12) 35%,
+              transparent 60%
+            )`
           }}
         />
-        
-        {/* Subtle vignette effect - soft brown edges, clear warm center */}
-        <div 
+
+        {/* Bottom ivory lift — cream rises from below to keep text legible */}
+        <div
           className="absolute inset-0 pointer-events-none"
           style={{
-              background: 'radial-gradient(ellipse at center, transparent 0%, var(--color-motif-deep)18 100%)'
-            }}
+            background: `linear-gradient(
+              to top,
+              rgba(${hex.cream}, 0.72) 0%,
+              rgba(${hex.soft}, 0.38) 30%,
+              rgba(${hex.accent}, 0.10) 55%,
+              transparent 70%
+            )`
+          }}
+        />
+
+        {/* Vignette — warm-beige edges draw the eye to the centre */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background: `radial-gradient(
+              ellipse at center,
+              transparent 30%,
+              rgba(${hex.medium}, 0.18) 65%,
+              rgba(${hex.deep}, 0.32) 100%
+            )`
+          }}
         />
       </div>
 
@@ -162,7 +194,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
                 className="object-contain"
                 priority
                 style={{
-                  filter: 'brightness(0) invert(1) drop-shadow(0 4px 16px rgba(255,255,255,0.35))',
+                  filter: `brightness(0) saturate(100%) invert(100%) drop-shadow(0 8px 20px rgba(${hex.accent}, 0.70))`,
                 }}
               />
             </div>
@@ -179,8 +211,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
             style={{
               fontFamily: '"Great Vibes", cursive',
               fontWeight: 400,
-              color: 'var(--color-motif-cream)', // #F5EFE6
-              textShadow: '0 0 18px var(--color-motif-cream)',
+              color: palette.cream,
+              textShadow: `0 0 18px rgba(${hex.cream}, 0.9), 0 2px 8px rgba(${hex.deep}, 0.4)`,
             }}
           >
             You are
@@ -193,8 +225,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
             style={{
               fontFamily: '"Cinzel", serif',
               fontWeight: 700,
-              color: 'var(--color-motif-cream)', // #F5EFE6
-              textShadow: '0 0 22px var(--color-motif-cream)95',
+              color: palette.cream,
+              textShadow: `0 0 22px rgba(${hex.cream}, 0.95), 0 3px 12px rgba(${hex.deep}, 0.45)`,
               letterSpacing: '0.05em',
             }}
           >
@@ -209,23 +241,23 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
               contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
             style={{
-              backgroundColor: 'var(--color-motif-medium)',
-              borderColor: 'var(--color-motif-medium)',
-              color: 'var(--color-motif-cream)',
+              backgroundColor: palette.cream,   // champagne gold
+              borderColor: palette.medium,        // classic beige border
+              color: palette.deep,                // warm brown text
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'var(--color-motif-medium)';
+              e.currentTarget.style.backgroundColor = palette.soft;
               e.currentTarget.style.transform = 'translateY(-2px)';
-              e.currentTarget.style.borderColor = 'var(--color-motif-medium)';
+              e.currentTarget.style.borderColor = palette.deep;
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = 'var(--color-motif-deep)';
+              e.currentTarget.style.backgroundColor = palette.accent;
               e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.borderColor = 'var(--color-motif-medium)';
+              e.currentTarget.style.borderColor = palette.medium;
             }}
           >
             <span
-              style={{ fontFamily: '"Cinzel", serif', fontWeight: 500, color: 'var(--color-motif-cream)' }}
+              style={{ fontFamily: '"Cinzel", serif', fontWeight: 500, color: palette.deep, letterSpacing: '0.18em' }}
             >
               Open Invitation
             </span>

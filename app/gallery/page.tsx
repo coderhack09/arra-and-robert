@@ -18,28 +18,37 @@ const cormorant = Cormorant_Garamond({
 // Match Details/Gallery palette
 const GALLERY_TEXT = "#9B6A41"
 const GALLERY_DECO_FILTER =
-  "brightness(0) saturate(100%) invert(32%) sepia(55%) saturate(900%) hue-rotate(355deg) brightness(95%) contrast(90%)"
+  "brightness(0) saturate(100%) invert(28%) sepia(32%) saturate(420%) hue-rotate(350deg) brightness(92%) contrast(88%)"
 
 // Generate on each request so newly added images in public/ appear without a rebuild
 export const dynamic = "force-dynamic"
 
-async function getGalleryImages() {
-  const abs = path.join(process.cwd(), "public", "gallery")
+async function getImagesFromFolder(folder: string): Promise<string[]> {
+  const abs = path.join(process.cwd(), "public", folder)
   try {
     const entries = await fs.readdir(abs, { withFileTypes: true })
     return entries
       .filter((e) => e.isFile())
-      .map((e) => `/gallery/${e.name}`)
+      .map((e) => `/${folder}/${e.name}`)
       .filter((p) => p.match(/\.(jpe?g|png|webp|gif)$/i))
-      .sort((a, b) => {
-        // Extract numeric part from filename for proper numerical sorting
-        const numA = parseInt(a.match(/\((\d+)\)/)?.[1] || "0", 10)
-        const numB = parseInt(b.match(/\((\d+)\)/)?.[1] || "0", 10)
-        return numA - numB
-      })
   } catch {
     return []
   }
+}
+
+async function getGalleryImages() {
+  // Try dedicated gallery folder first, fall back to desktop-background
+  const galleryImages = await getImagesFromFolder("gallery")
+  const sources = galleryImages.length > 0
+    ? galleryImages
+    : await getImagesFromFolder("desktop-background")
+
+  return sources.sort((a, b) => {
+    // Extract numeric part from filename for proper numerical sorting
+    const numA = parseInt(a.match(/\((\d+)\)/)?.[1] || "0", 10)
+    const numB = parseInt(b.match(/\((\d+)\)/)?.[1] || "0", 10)
+    return numA - numB
+  })
 }
 
 export default async function GalleryPage() {
@@ -157,6 +166,13 @@ export default async function GalleryPage() {
                 style={{ backgroundColor: `${GALLERY_TEXT}10`, borderColor: `${GALLERY_TEXT}40`, color: GALLERY_TEXT }}
               >
                 public/gallery
+              </code>
+              {" "}or{" "}
+              <code
+                className="px-2 py-1 rounded border"
+                style={{ backgroundColor: `${GALLERY_TEXT}10`, borderColor: `${GALLERY_TEXT}40`, color: GALLERY_TEXT }}
+              >
+                public/desktop-background
               </code>
               .
             </p>
