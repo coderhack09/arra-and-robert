@@ -10,4 +10,4 @@ if [ -z "$CHANGED" ]; then
 fi
 
 echo "☁️  Image changes detected in public/ — syncing to Cloudinary..."
-node --env-file=.env.local --import tsx/esm scripts/sync-cloudinary.ts
+node --env-file=.env.local --import tsx/esm scripts/sync-cloudinary.ts --project "Arra and Robert"
