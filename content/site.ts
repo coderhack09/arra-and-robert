@@ -5,7 +5,7 @@ export const siteConfig = {
     groom: "Robert John O. Cosico", //Ltryl B. Benitez
     groomNickname: "Robert",
     monogram:"/monogram/monogram.png" ,//Ltryl
-    backgroundMusic:"/background_music//Ed Sheeran - The Joker And The Queen (Lyrics) feat. Taylor Swift.mp3"
+    backgroundMusic:"/background_music/Ezra Band - Runaway with lyrics.mp3"
   },
   googleAPI:{
     messageForm: "https://docs.google.com/forms/d/e/1FAIpQLScFmpNtAI3vx2FKRaMIE38Kcn0w9ajHtz7CYn6CYgQ8yKqAng/formResponse", //done
