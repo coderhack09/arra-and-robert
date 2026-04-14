@@ -8,15 +8,15 @@ export const siteConfig = {
     backgroundMusic:"/background_music/Ezra Band - Runaway with lyrics.mp3"
   },
   googleAPI:{
-    messageForm: "https://docs.google.com/forms/d/e/1FAIpQLScFmpNtAI3vx2FKRaMIE38Kcn0w9ajHtz7CYn6CYgQ8yKqAng/formResponse", //done
-    message: "https://script.google.com/macros/s/AKfycbx6G-cc8v2OJdWPOSJpARdwqigPcAzAvyZPTd1v6cIwZuHHoRXW1ZBeBDDBg1Tt5Mc0/exec", //done
-    guestList: "https://script.google.com/macros/s/AKfycbyd62qRIHpsAQfG-yxV6oqF0RXtL3oJcWcsBpICn_cicAPPbEZTpa0yIcJrS-3SfnKi/exec", //done
-    guestRequest: "https://script.google.com/macros/s/AKfycbwQ3Jo1ycAwY0ZPZcmZrRuK1Sg_X9w-9t8H5_Lq069qWKlJvaIteO1nmUEPpGLfrXdV/exec", //done
-    entourage: "https://script.google.com/macros/s/AKfycbzH5KpZMOHBmUpeuTtM3cfURhMc77_oyUaHZmSoP0JAQoenBqfb5mV5z9i2SEUSnkly/exec", //done
-    sponsors: "https://script.google.com/macros/s/AKfycbz3xGAnhS-aTRnkUPPMmT-1zVsssbDphzqdWR0gW5mSttDqE1nf4GgmELJYUrSEyt-W/exec", //done
-    weddingDetails: "https://script.google.com/macros/s/AKfycby4v8qqP2dpT5G3oOBb2g3we70qGnx_paDqH1hZdMT_P31-MzflyoQDnercr84Wemio/exec", //done
+    messageForm: "https://docs.google.com/forms/d/e/1FAIpQLSeDhmUg1hwgBeD4pBnnqOvrd9Qn21nKCFkaX1RvmuEJM-zXUA/formResponse", //done
+    message: "https://script.google.com/macros/s/AKfycbxbhwAZ2eolYTCTGkHsZLEfKWZXQJjAy4eLJe-BcXc5pq7jSJ9O21SGCYaTO_kIltI6/exec", //done
+    guestList: "https://script.google.com/macros/s/AKfycbz9ZmqEuq4vBzgK4KyvTAA_G10pqAUtZFqTquqPycYVRvgJrEe1LIiuccWWIOE3moNB/exec", //done
+    guestRequest: "https://script.google.com/macros/s/AKfycbzeXiT1v6SqhbHzLtshOaeE9o8kMr-yOxz2IDrWusOrYdlWmgGnLTxC1pb5y4hDMNTy/exec", //done
+    entourage: "https://script.google.com/macros/s/AKfycbw51jnEcZi0o70H8G0EwBIpyqMTCHkisaNXZAV5Rooat3jdtDAysBB7nnssXw_ViWuD/exec", //done
+    sponsors: "https://script.google.com/macros/s/AKfycbxPws30pK7Rc8dUcv75WLKjNu9KnRBhj9sTXv3o-lsJC6Aa_4ZgI1Ae9R2uc5D11GiA/exec", //dsone
+    weddingDetails: "https://script.google.com/macros/s/AKfycbwtiqKL7zxzUYysEBFxclgU-iA0liAyvpaLl3Uf2r6W1t8QVoBc6daM0i50_7HpPNGS/exec", //done
 ////google share 
-    googleShare: "https://docs.google.com/spreadsheets/d/1NzySlITNcY__DZtbF57EVfVjvy5SCEw35adaofzaioQ/edit?usp=sharing",
+    googleShare: "https://docs.google.com/spreadsheets/d/1nQaghVTASokBobVFNJ-BU6YfJvkPreop50HSgQxFxYU/edit?usp=sharing", //done
   },
   wedding: {
     date: "July 11, 2026",
@@ -119,7 +119,7 @@ Now, as they prepare to say yes before God and the people they love most, Cather
     secondary: "#F5F5DC",
   },
   snapShare: {
-    googleDriveLink: "https://drive.google.com/drive/folders/1OHc4gq4VHPequrPTjIrV6-YpZ5ctk9lo?usp=sharing",
+    googleDriveLink: "https://drive.google.com/drive/folders/1XHy5EuSsvL3WFLFj0JrKRxElDvGR3yxb?usp=sharing",
     hashtag: ["#ROBERTgotMesmARRAized","#heartROBERTforARRA"],
     instructions: "Please scan this QR Code, create a folder with your name and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
