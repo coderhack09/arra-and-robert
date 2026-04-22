@@ -67,9 +67,9 @@ export default function MasonryGallery({ images }: { images: ImageItem[] }) {
             onClick={() => setLightboxIdx(idx)}
             aria-label="Open image"
           >
-            <div className="relative w-full overflow-hidden rounded-xl border border-motif-medium/40 bg-white/5 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:border-motif-medium/60">
+            <div className="relative w-full overflow-hidden rounded-xl border border-[#606C60]/40 bg-white/5 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:border-[#606C60]/60">
               {!loaded[img.src] && (
-                <div className={`${getCardAspect(img)} w-full animate-pulse bg-gradient-to-br from-motif-accent/30 via-motif-cream/25 to-motif-accent/30`} />
+                <div className={`${getCardAspect(img)} w-full animate-pulse bg-gradient-to-br from-[#606C60]/30 via-[#E1D5C7]/25 to-[#606C60]/30`} />
               )}
               <div className={`relative w-full ${getCardAspect(img)}`}>
                 <CloudinaryImage

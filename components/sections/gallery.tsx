@@ -289,11 +289,11 @@ export function Gallery() {
                       </div>
 
                       {/* Image counter badge */}
-                      {/* <div className="absolute top-2 right-2 backdrop-blur-sm rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: 'color-mix(in srgb, var(--color-motif-deep) 60%, transparent)' }}>
+                      <div className="absolute top-2 right-2 backdrop-blur-sm rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ backgroundColor: 'color-mix(in srgb, var(--color-motif-deep) 60%, transparent)' }}>
                         <span className="text-xs font-medium text-motif-cream">
                           {index + 1}/{galleryItems.length}
                         </span>
-                      </div> */}
+                      </div>
                     </button>
                   ))}
                 </div>

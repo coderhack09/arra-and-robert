@@ -510,7 +510,7 @@ export function Details() {
               </div>
 
               {/* Image */}
-              <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] max-w-2xl mx-auto rounded-lg sm:rounded-xl overflow-hidden border border-motif-medium/30 mb-0 mx-4 sm:mx-6 md:mx-8" style={{ width: 'calc(100% - 2rem)' }}>
+              <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] max-w-2xl mx-auto rounded-lg sm:rounded-xl overflow-hidden border border-motif-medium/30" style={{ width: 'calc(100% - 2rem)' }}>
                 <CloudinaryImage
                   src={siteConfig.dressCode.sponsors.photo}
                   alt="Principal sponsor attire"
