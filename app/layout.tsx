@@ -9,8 +9,8 @@ import { ClientLayout } from "@/components/client-layout"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://arra-and-robert.weddinginvitationrsvp.com/"
 const canonicalUrl = siteUrl.replace(/\/$/, "")
-const desktopHero = "/Details/PreviewLink.jpg"
-const mobileHero = "/Details/PreviewLink.jpg"
+const desktopHero = "/Details/newLinkPreview.png"
+const mobileHero = "/Details/newLinkPreview.png"
 const eventImageUrl = `${canonicalUrl}${desktopHero}`
 
 // Hardcoded Cloudinary URL — image is already uploaded and always accessible via CDN.
@@ -18,7 +18,7 @@ const eventImageUrl = `${canonicalUrl}${desktopHero}`
 // The public-folder URL is kept only as a fallback in the images array below.
 //https://res.cloudinary.com/dlkznubkj/image/upload/v1776167457/wedding-projects/arra-and-robert/Details/PreviewLink.jpg
 const OG_IMAGE_CLOUDINARY =
-  "https://res.cloudinary.com/dlkznubkj/image/upload/f_jpg,q_auto,w_1200,h_630,c_fill/wedding-projects/arra-and-robert/Details/PreviewLink.jpg"
+  "https://res.cloudinary.com/dlkznubkj/image/upload/v1777235018/wedding-projects/arra-and-robert/Details/newLinkPreview.png"
 const OG_IMAGE_FALLBACK = `${canonicalUrl}${desktopHero}`
 
 const coupleNames = `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}`
