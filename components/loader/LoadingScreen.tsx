@@ -11,9 +11,9 @@ interface LoadingScreenProps {
 
 // Countdown boxes with color photos - numbers show days, hours, minutes
 const COUNTDOWN_BOXES = [
-  { src: '/frontboxes/newBox (3).webp' },
-  { src: '/frontboxes/newBox (2).webp' },
-  { src: '/frontboxes/newBox (1).webp' }
+  { src: '/frontboxes/box-1.webp' },
+  { src: '/frontboxes/box-3new.jpg' },
+  { src: '/frontboxes/box-3.webp' }
 ];
 
 const MAIN_BW_IMAGE = '/frontboxes/phoneView.webp';

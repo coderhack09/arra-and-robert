@@ -482,13 +482,13 @@ export function Hero() {
             }}
           >
             <span className="block text-left text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] drop-shadow-2xl">
-              {siteConfig.couple.brideNickname}
+              {siteConfig.couple.groomNickname}
             </span>
             <span className="block text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl py-1 sm:py-2 opacity-80">
               +
             </span>
             <span className="block text-right text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] drop-shadow-2xl">
-              {siteConfig.couple.groomNickname}
+              {siteConfig.couple.brideNickname}
             </span>
           </div>
 
