@@ -35,7 +35,7 @@ export function LoveStory() {
         layout="image-left"
         isFirst={true}
         // title="The Unexpected Beginning"
-        imageSrc="/mobile-background/img (5).webp"
+        imageSrc="/mobile-background/img (2).webp"
         text={
           <>
             <p className="mb-4">
@@ -50,7 +50,7 @@ export function LoveStory() {
       <StorySection
         theme="dark"
         layout="image-right"
-        imageSrc="/mobile-background/img (4).webp"
+        imageSrc="/decoration/couple.jpg"
         // title="Clueless but Thriving"
         text={
           <>
@@ -81,7 +81,7 @@ export function LoveStory() {
             <StorySection
         theme="dark"
         layout="image-right"
-        imageSrc="/mobile-background/img (3).webp"
+        imageSrc="/decoration/couple1.jpg"
         // title="The Chocolate Move"
         text={
           <>
@@ -97,7 +97,7 @@ export function LoveStory() {
         theme="light"
         layout="image-left"
         isLast={true}
-        imageSrc="/frontboxes/newBox (2).webp"
+        imageSrc="/decoration/couple2.jpg"
         // title="Sabay-Uwi Chronicles"
         text={
           <>

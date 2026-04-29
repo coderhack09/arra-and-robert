@@ -5,7 +5,7 @@ export const siteConfig = {
     groom: "Robert John O. Cosico", //Ltryl B. Benitez
     groomNickname: "RJ",
     monogram:"/monogram/monogram.png" ,//Ltryl
-    backgroundMusic:"/background_music/Ezra Band - Runaway with lyrics.mp3"
+    backgroundMusic:"/background_music/Adam Sandler - Grow Old With You (Wedding Piano Version) - from The Wedding Singer (mp3cut.net).mp3"
   },
   googleAPI:{
     messageForm: "https://docs.google.com/forms/d/e/1FAIpQLSeDhmUg1hwgBeD4pBnnqOvrd9Qn21nKCFkaX1RvmuEJM-zXUA/formResponse", //done
@@ -20,7 +20,7 @@ export const siteConfig = {
   },
   wedding: {
     date: "July 11, 2026",
-    time: "10:00 AM",
+    time: "1:00 PM",
     venue: "St. John Bosco Parish Church",
     tagline: "are getting married!",
     theme: "Our wedding palette is inspired by timeless elegance and warmth.Motif Colors: Champagne Gold, Soft Beige, Warm Soft Brown",
@@ -53,16 +53,16 @@ export const siteConfig = {
     map: "https://maps.app.goo.gl/a3UyxxuGzoU8aAuSA",
     date: "July 11, 2026",
     day: "Saturday",
-    time: "10:00 AM",
-    entourageTime: "9:00 AM",
-    guestsTime: "9:30 AM",
+    time: "1:00 PM",
+    entourageTime: "12:00 PM",
+    guestsTime: "12:30 PM",
     image: "/Details/ceremony.webp",
   },
   reception: {
     location: "Diamond Hotel Philippines",
     venue: "Roxas Boulevard, Corner Dr. J. Quintos Street, Manila, 1000 Metro Manila",
     date: "July 11, 2026",
-    time: "12:00 NN",
+    time: "4:00 PM",
     image: ["/Details/reception.webp","/Details/reception2.webp","/Details/reception3.webp"],
   },                          
   dressCode: {

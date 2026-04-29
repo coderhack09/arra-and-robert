@@ -62,7 +62,7 @@ const timelineEvents: TimelineEvent[] = [
     imageSrc: "/weddingtimeline/WeddingCeremony.png",
   },
   {
-    time: `11:00 AM`,
+    time: `2:30 PM`,
     title: "Photos",
     // description: "We are having an unplugged ceremony, meaning we kindly ask all guests to put away their phones and cameras. We want everyone to be fully in the moment with us. Don't worry—our professional photographer will capture all the special moments, and we'll be happy to share them with you later!",
     location: `${siteConfig.ceremony.location}`,
@@ -78,7 +78,7 @@ const timelineEvents: TimelineEvent[] = [
     imageSrc: "/weddingtimeline/CockTailHour.png",
   },
   {
-    time: "2:00 PM",
+    time: "4:30 PM",
     title: "Program Starts",
     // description: `Celebrate the grand entrance of ${groomNickname} & ${brideNickname} and the start of the evening festivities.`,
     location: receptionVenue,

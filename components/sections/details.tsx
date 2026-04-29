@@ -655,7 +655,7 @@ export function Details() {
           </p>
           <ul className="space-y-2 sm:space-y-3 max-w-2xl mx-auto">
             {[
-              "Semi-Formal Attire",
+              "Formal Attire",
               "Ladies, we know you'd look beautiful in white — but let's save that for the bride.",
               "We kindly encourage everyone to avoid casual attire such as jeans, shorts, slippers, and sando.",
               "We also gently discourage wearing all or predominantly black outfits to match the bright and joyful mood of our celebration.",
