@@ -36,30 +36,43 @@ async function getImagesFromFolder(folder: string): Promise<string[]> {
   }
 }
 
-async function getGalleryImages() {
-  // Try dedicated gallery folder first, fall back to desktop-background
-  const galleryImages = await getImagesFromFolder("gallery")
-  const sources = galleryImages.length > 0
-    ? galleryImages
-    : await getImagesFromFolder("desktop-background")
-
-  return sources.sort((a, b) => {
-    // Extract numeric part from filename for proper numerical sorting
+function sortByFilenameNumber(paths: string[]) {
+  return [...paths].sort((a, b) => {
     const numA = parseInt(a.match(/\((\d+)\)/)?.[1] || "0", 10)
     const numB = parseInt(b.match(/\((\d+)\)/)?.[1] || "0", 10)
     return numA - numB
   })
 }
 
-export default async function GalleryPage() {
-  const allImages = await getGalleryImages()
-  const images = allImages.map((src) => ({
+async function getGalleryImages(): Promise<
+  { src: string; category: "desktop" | "mobile"; width: number; height: number; orientation: "landscape" | "portrait" }[]
+> {
+  const [desktopPaths, mobilePaths] = await Promise.all([
+    getImagesFromFolder("desktop-background"),
+    getImagesFromFolder("mobile-background"),
+  ])
+
+  const desktopItems = sortByFilenameNumber(desktopPaths).map((src) => ({
     src,
-    category: "gallery" as const,
+    category: "desktop" as const,
     width: 1200,
     height: 900,
     orientation: "landscape" as const,
   }))
+
+  const mobileItems = sortByFilenameNumber(mobilePaths).map((src) => ({
+    src,
+    category: "mobile" as const,
+    width: 900,
+    height: 1200,
+    orientation: "portrait" as const,
+  }))
+
+  return [...desktopItems, ...mobileItems]
+}
+
+export default async function GalleryPage() {
+  const images = await getGalleryImages()
 
   return (
     <main className="min-h-screen relative overflow-hidden bg-white">
@@ -165,14 +178,14 @@ export default async function GalleryPage() {
                 className="px-2 py-1 rounded border"
                 style={{ backgroundColor: `${GALLERY_TEXT}10`, borderColor: `${GALLERY_TEXT}40`, color: GALLERY_TEXT }}
               >
-                public/gallery
+                public/desktop-background
               </code>
               {" "}or{" "}
               <code
                 className="px-2 py-1 rounded border"
                 style={{ backgroundColor: `${GALLERY_TEXT}10`, borderColor: `${GALLERY_TEXT}40`, color: GALLERY_TEXT }}
               >
-                public/desktop-background
+                public/mobile-background
               </code>
               .
             </p>

@@ -13,7 +13,7 @@ interface LoadingScreenProps {
 const COUNTDOWN_BOXES = [
   { src: '/frontboxes/box-1.webp' },
   { src: '/frontboxes/box-3new.jpg' },
-  { src: '/frontboxes/box-3.webp' }
+  { src: '/frontboxes/DSC07280_Frame.jpg' }
 ];
 
 const MAIN_BW_IMAGE = '/frontboxes/phoneView.webp';
@@ -42,12 +42,12 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
   // Wedding date derived from siteConfig.wedding.date
   const debutDateObj = new Date(siteConfig.wedding.date);
   const debutMonthName = debutDateObj
-    .toLocaleString('default', { month: 'short' })
-    .toUpperCase(); // e.g. "MAY"
+    .toLocaleString('default', { month: 'long' })
+    .toUpperCase(); // e.g. "JULY"
   const debutDay = String(debutDateObj.getDate()).padStart(2, '0'); // e.g. "09"
   const debutYear = String(debutDateObj.getFullYear()); // e.g. "2026"
 
-  const countdownNumbers = [debutMonthName, debutDay, debutYear]; // e.g. May, 09, 2026
+  const countdownNumbers = [debutMonthName, debutDay, debutYear]; // e.g. JULY, 09, 2026
   const countdownLabels = ['Month', 'Day', 'Year']; // should return Month, Day, Year
 
   useEffect(() => {

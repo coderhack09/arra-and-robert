@@ -639,8 +639,7 @@ export function Details() {
               <div className="px-4 sm:px-6 md:px-8 pb-5 sm:pb-7">
                 <div className="border-t border-motif-silver/60 pt-4 sm:pt-5">
                   <p className="text-center text-sm sm:text-base font-[family-name:var(--font-crimson)] font-semibold text-motif-deep leading-relaxed mb-3 sm:mb-4">
-                    We would like to see you in your best confortable attire that suits our color motif.
-                  </p>
+                  We would love to see you in your best, most comfortable attire that complements our color motif.                  </p>
 
                 </div>
               </div>
@@ -741,7 +740,7 @@ export function Details() {
                 Arrival
                 </h4>
                 <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-motif-deep/80 leading-relaxed`}>
-                To ensure everything runs smoothly, please arrive at least 30 minutes before the ceremony starts. The program will begin at {siteConfig.ceremony.time}, so we kindly ask everyone to arrive by {siteConfig.ceremony.guestsTime} minutes. This will give you time to find your seat, take in the beautiful setup, and be fully present for our special moment
+                To ensure everything runs smoothly, please arrive at least 30 minutes before the ceremony starts. The program will begin at {siteConfig.ceremony.time}, so we kindly ask everyone to arrive by {siteConfig.ceremony.guestsTime}. This will give you time to find your seat, take in the beautiful setup, and be fully present for our special moment
                 </p>
               </div>
             </div>
