@@ -46,31 +46,31 @@ interface TimelineEvent {
 
 const timelineEvents: TimelineEvent[] = [
   {
-    time: `${siteConfig.ceremony.entourageTime}`,
-    title: "Arrival",
+    time: `1:00 PM`,
+    title: "Assembly",
     // description: "Please arrive on time to find your seat, settle in, and get ready for the celebration.",
     location: `${siteConfig.ceremony.location}`,
     icon: GuestsIcon,
     imageSrc: "/weddingtimeline/arrivalimage.png",
   },  
   {
-    time: `${siteConfig.ceremony.time}`,
-    title: "Wedding Ceremony",
+    time: `2:00 PM`,
+    title: "Mass Time",
     // description: `Join us as ${groomNickname} & ${brideNickname} exchange vows and begin their life together.`,
     location: `${siteConfig.ceremony.location}`,
     icon: RingsIcon,
     imageSrc: "/weddingtimeline/WeddingCeremony.png",
   },
   {
-    time: `2:30 PM`,
-    title: "Photos",
+    time: `3:00 PM`,
+    title: "Photo Ops",
     // description: "We are having an unplugged ceremony, meaning we kindly ask all guests to put away their phones and cameras. We want everyone to be fully in the moment with us. Don't worry—our professional photographer will capture all the special moments, and we'll be happy to share them with you later!",
     location: `${siteConfig.ceremony.location}`,
     icon: RingsIcon,
     imageSrc: "/weddingtimeline/PhotoSession.png",
   },
   {
-    time: `${siteConfig.reception.time}`,
+    time: `5:00 PM`,
     title: "Cocktail Hour",
     // description: "Enjoy drinks and light bites as we transition into the reception and mingle with guests.",
     location: receptionVenue,
@@ -78,7 +78,7 @@ const timelineEvents: TimelineEvent[] = [
     imageSrc: "/weddingtimeline/CockTailHour.png",
   },
   {
-    time: "4:30 PM",
+    time: "6:00 PM",
     title: "Program Starts",
     // description: `Celebrate the grand entrance of ${groomNickname} & ${brideNickname} and the start of the evening festivities.`,
     location: receptionVenue,
@@ -86,21 +86,21 @@ const timelineEvents: TimelineEvent[] = [
     imageSrc: "/weddingtimeline/reception welcom.png",
   },
   {
-    time: "6:30 PM",
+    time: "7:00 PM",
     title: "Dinner Service",
     // description: "Share a relaxed meal together as we continue the celebration.",
     location: receptionVenue,
     icon: DinnerIcon,
     imageSrc: "/weddingtimeline/DinnerService.png",
   },
-  {
-    time: "8:30 PM",
-    title: "Party",
-    // description: "Let's dance the night away and celebrate this new chapter!",
-    location: receptionVenue,
-    icon: DanceIcon,
-    imageSrc: "/weddingtimeline/SendOff.png",
-  },
+  // {
+  //   time: "8:30 PM",
+  //   title: "Party",
+  //   // description: "Let's dance the night away and celebrate this new chapter!",
+  //   location: receptionVenue,
+  //   icon: DanceIcon,
+  //   imageSrc: "/weddingtimeline/SendOff.png",
+  // },
 ]
 
 export function WeddingTimeline() {
