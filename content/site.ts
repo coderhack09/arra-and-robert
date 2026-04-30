@@ -5,7 +5,7 @@ export const siteConfig = {
     groom: "Robert John O. Cosico", //Ltryl B. Benitez
     groomNickname: "RJ",
     monogram:"/monogram/monogram.png" ,//Ltryl
-    backgroundMusic:"/background_music/Adam Sandler - Grow Old With You (Wedding Piano Version) - from The Wedding Singer (mp3cut.net).mp3"
+    backgroundMusic:"/background_music/Grow Old With You - Adam Sandler  Violin Cover (mp3cut.net).mp3"
   },
   googleAPI:{
     messageForm: "https://docs.google.com/forms/d/e/1FAIpQLSeDhmUg1hwgBeD4pBnnqOvrd9Qn21nKCFkaX1RvmuEJM-zXUA/formResponse", //done
