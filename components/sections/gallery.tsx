@@ -30,7 +30,7 @@ const galleryItems = [
   { image: "/gallery/gallery-2.jpg", text: " " },
   { image: "/gallery/gallery-3.jpg", text: " " },
   { image: "/gallery/gallery-4.jpg", text: " " },
-  { image: "/gallery/gallery-5.jpg", text: " " },
+  { image: "/decoration/img (4).jpg", text: " " },
 
 ]
 
