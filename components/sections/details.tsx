@@ -505,7 +505,7 @@ export function Details() {
 
               <div className="px-4 sm:px-6 md:px-8 pt-5 sm:pt-7 pb-4 sm:pb-5 text-center">
                 <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl lg:text-2xl text-motif-deep uppercase tracking-[0.22em] font-semibold leading-tight`}>
-                  Ninong &amp; Ninang
+                Principal Sponsors
                 </h4>
               </div>
 
@@ -533,7 +533,7 @@ export function Details() {
           </div>
 
           {/* ── Ninang ── */}
-          <div className="relative group">
+          {/* <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-br from-motif-silver/22 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
             <div className="relative bg-motif-cream rounded-xl sm:rounded-2xl overflow-hidden border border-motif-deep/20 shadow-[0_16px_40px_rgba(0,0,0,0.14)] hover:shadow-[0_20px_48px_rgba(0,0,0,0.22)] hover:border-motif-deep/70 transition-all duration-300">
 
@@ -561,7 +561,7 @@ export function Details() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* ── Bridesmaid ── */}
           <div className="relative group">
