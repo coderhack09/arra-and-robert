@@ -714,13 +714,40 @@ export function Details() {
 
             {/* Reminders List */}
             <div className="space-y-4 sm:space-y-5 md:space-y-6 max-w-2xl mx-auto">
-               {/* No Kinds */}
-               <div className="bg-motif-cream/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
-                <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-motif-deep mb-2 sm:mb-3`}>
-                Adults-Only Celebration
+              {/* Kindly No Plus One */}
+              <div className="bg-motif-cream/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
+                <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-motif-deep mb-2 sm:mb-3 uppercase tracking-[0.12em]`}>
+                  Kindly No Plus One
+                </h4>
+                <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-motif-deep/80 leading-relaxed whitespace-pre-line`}>
+                  {`Due to limited space we are
+unable to accommodate plus ones.
+We hope you understand and will
+still join us to celebrate.`}
+                </p>
+              </div>
+
+              {/* Gift Guide */}
+              <div className="bg-motif-cream/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
+                <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-motif-deep mb-2 sm:mb-3 uppercase tracking-[0.12em]`}>
+                  Gift Guide
+                </h4>
+                <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-motif-deep/80 leading-relaxed whitespace-pre-line`}>
+                  {`As love is what this night is all about
+your presence is one we can't celebrate
+without but should you still believe that
+gift is worth giving a small envelope for
+our future is a delightful blessing.`}
+                </p>
+              </div>
+
+              {/* Adult Only */}
+              <div className="bg-motif-cream/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
+                <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-motif-deep mb-2 sm:mb-3 uppercase tracking-[0.12em]`}>
+                  Adult Only
                 </h4>
                 <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-motif-deep/80 leading-relaxed`}>
-                We kindly request that our wedding be an adults-only occasion. We hope this allows everyone to relax and fully enjoy the celebration with us.
+                  Although we love your children, this will be an adult only occasion. If your child is invited their names will be on RSVP tab. We hope you take this opportunity to enjoy a date night and we appreciate you making prior arrangements.
                 </p>
               </div>
               {/* Unplugged Ceremony Reminder */}

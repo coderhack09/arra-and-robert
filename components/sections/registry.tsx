@@ -36,8 +36,11 @@ export function Registry() {
         </h2>
         
         <p className="text-xs sm:text-sm md:text-base lg:text-lg text-motif-cream/90 font-light max-w-2xl mx-auto leading-relaxed px-2">
-        With hearts full of gratitude, we ask only for your presence and prayers as we celebrate together. Should you wish to bless us further, a gift toward our future would be a blessing we will always treasure. 
-
+        As love is what this night is all about
+your presence is one we can't celebrate
+without but should you still believe that
+gift is worth giving a small envelope for
+our future is a delightful blessing.
         </p>
         
         <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">

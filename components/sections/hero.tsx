@@ -134,8 +134,15 @@ export function Hero() {
         ))}
         {/* Bottom vignette — lifts text without crushing the photo */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/15 to-transparent z-0" />
-        {/* Top vignette — subtle shadow for navbar readability */}
-        <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-black/35 to-transparent z-0" />
+        {/* Upper linear gradient */}
+        <div
+          className="absolute inset-x-0 top-0 z-0 pointer-events-none min-h-[12rem] h-[42vh] max-h-[32rem]"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.42) 28%, rgba(0,0,0,0.14) 58%, transparent 100%)",
+          }}
+          aria-hidden
+        />
       </div>
 
       {SHOW_BUTTERFLIES && (
@@ -463,8 +470,10 @@ export function Hero() {
         >
           {/* Tagline */}
           <p
-            className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base tracking-[0.28em] sm:tracking-[0.32em] uppercase font-medium text-center text-motif-cream/90`}
-            style={{ textShadow: "0 2px 10px rgba(0,0,0,0.65)" }}
+            className={`${cormorant.className} -translate-y-12 sm:-translate-y-16 md:-translate-y-20 lg:-translate-y-28 text-[0.7rem] sm:text-xs md:text-sm lg:text-base tracking-[0.28em] sm:tracking-[0.32em] uppercase font-medium text-center text-motif-cream/95`}
+            style={{
+              textShadow: "0 2px 14px rgba(0,0,0,0.85), 0 1px 2px rgba(0,0,0,0.9)",
+            }}
           >
             Together with our families,
             <br />
