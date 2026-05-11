@@ -87,7 +87,7 @@ export const siteConfig = {
       ladies: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
       notes: "You may glam up in theses shades.",
       photo: "/Details/guest.png",
-      palette: "#6B3A0F, #4A1F05, #2B0F02, #D6B49A, #E8DCC3, #E6C28B, #E1DCCF",
+      palette: "#6B3A0F, #4A1F05, #2B0F02, #D6B49A, #E8DCC3, #E6C28B",
     },
     note: "We kindly request our guests to dress in attire following our wedding palette."
   },

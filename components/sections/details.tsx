@@ -511,7 +511,7 @@ export function Details() {
 
               <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] max-w-2xl mx-auto rounded-lg sm:rounded-xl overflow-hidden border border-motif-medium/30" style={{ width: 'calc(100% - 2rem)' }}>
                 <Image
-                  src="/Details/Ninong & Ninang.png"
+                  src="/Details/guest (2).png"
                   alt="Ninong and Ninang attire"
                   fill
                   className="object-contain bg-[#FFF7F6]/50 p-2 sm:p-3"
@@ -575,7 +575,7 @@ export function Details() {
               </div>
 
               <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] max-w-2xl mx-auto rounded-lg sm:rounded-xl overflow-hidden border border-motif-medium/30" style={{ width: 'calc(100% - 2rem)' }}>
-                <CloudinaryImage
+                <Image
                   src="/Details/Bridesmaid.png"
                   alt="Bridesmaid attire"
                   fill
@@ -606,7 +606,7 @@ export function Details() {
               </div>
 
               <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] max-w-2xl mx-auto rounded-lg sm:rounded-xl overflow-hidden border border-motif-medium/30" style={{ width: 'calc(100% - 2rem)' }}>
-                <CloudinaryImage
+                <Image
                   src="/Details/Groomsman.png"
                   alt="Groomsman attire"
                   fill
