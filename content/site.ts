@@ -62,7 +62,7 @@ export const siteConfig = {
     location: "Diamond Hotel Philippines",
     venue: "Roxas Boulevard, Corner Dr. J. Quintos Street, Manila, 1000 Metro Manila",
     date: "July 11, 2026",
-    time: "4:00 PM",
+    time: "5:00 PM",
     image: ["/Details/reception.webp","/Details/reception2.webp","/Details/reception3.webp"],
   },                          
   dressCode: {
