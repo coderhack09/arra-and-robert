@@ -182,7 +182,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
                   fontWeight: 700,
                 }}
               >
-                {countdown.days} more days to go
+                {countdown.days} days to go
               </span>
             </div>
 

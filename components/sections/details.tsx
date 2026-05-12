@@ -683,7 +683,7 @@ export function Details() {
             {[
               "Formal Attire",
               "Ladies, we know you'd look beautiful in white — but let's save that for the bride.",
-              "We kindly encourage everyone to avoid casual attire such as jeans, shorts, slippers, and sando.",
+              "We kindly encourage everyone to avoid casual attire such as jeans, shorts, slippers, and tank tops.",
               "We also gently discourage wearing all or predominantly black outfits to match the bright and joyful mood of our celebration.",
             ].map((note, i) => (
               <li key={i} className="flex gap-3 items-start">
@@ -744,27 +744,21 @@ export function Details() {
               {/* Kindly No Plus One */}
               <div className="bg-motif-cream/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
                 <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-motif-deep mb-2 sm:mb-3 uppercase tracking-[0.12em]`}>
-                  Kindly No Plus One
+                By Invitation Only
                 </h4>
                 <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-motif-deep/80 leading-relaxed whitespace-pre-line`}>
-                  {`Due to limited space we are
-unable to accommodate plus ones.
-We hope you understand and will
-still join us to celebrate.`}
+                  {`To keep our celebration intimate, we kindly ask that only those named on the invitation attend. Thank you for your cooperation and understanding.`}
                 </p>
               </div>
 
               {/* Gift Guide */}
               <div className="bg-motif-cream/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
                 <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-motif-deep mb-2 sm:mb-3 uppercase tracking-[0.12em]`}>
-                  Gift Guide
+                Gift Guide
                 </h4>
                 <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-motif-deep/80 leading-relaxed whitespace-pre-line`}>
-                  {`As love is what this night is all about
-your presence is one we can't celebrate
-without but should you still believe that
-gift is worth giving a small envelope for
-our future is a delightful blessing.`}
+                  {`Having you celebrate with us is more than enough. But if you wish to give a gift, a small contribution toward our future together would be truly appreciated.
+`}
                 </p>
               </div>
 
@@ -780,11 +774,11 @@ our future is a delightful blessing.`}
               {/* Unplugged Ceremony Reminder */}
               <div className="bg-motif-cream/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
                 <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-motif-deep mb-2 sm:mb-3`}>
-                Unplugged Ceremony
+                Be Present With Us
 
                 </h4>
                 <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-motif-deep/80 leading-relaxed`}>
-                We&apos;re having a mostly unplugged ceremony. Guests may take photos, but we kindly ask that it be kept minimal. Please avoid blocking or crowding our official photographers so they can capture the special moments. We&apos;d love for everyone to stay present and share the moment with us. Don&apos;t worry—professional photos will be shared with you after the event. Thank you for your understanding 
+                Our ceremony will be mostly unplugged. We kindly ask guests to minimize phone use and allow our photographers to capture the moment uninterrupted. Thank you for celebrating fully present with us.
                 </p>
               </div>
 
@@ -794,7 +788,7 @@ our future is a delightful blessing.`}
                 Arrival
                 </h4>
                 <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-motif-deep/80 leading-relaxed`}>
-                To ensure everything runs smoothly, please arrive at least 30 minutes before the ceremony starts. The program will begin at {siteConfig.ceremony.time}, so we kindly ask everyone to arrive by {siteConfig.ceremony.guestsTime}. This will give you time to find your seat, take in the beautiful setup, and be fully present for our special moment
+                Kindly arrive by 1:00 PM so you may be comfortably seated before the ceremony begins promptly at 1:30 PM.
                 </p>
               </div>
             </div>

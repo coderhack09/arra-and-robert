@@ -429,7 +429,7 @@ export function GuestList() {
         </p>
         <p className={`${cormorant.className} text-sm sm:text-base md:text-lg lg:text-xl text-motif-cream font-bold max-w-xl mx-auto leading-relaxed px-2 mb-2 sm:mb-3`}>
         Arra Villarin - 09177075289 <br />
-        RJ Cosicco - 09178549799
+        RJ Cosico - 09178549799
         </p>
         
         {/* Decorative element below subtitle */}
