@@ -765,7 +765,7 @@ export function Details() {
               {/* Adult Only */}
               <div className="bg-motif-cream/60 rounded-lg p-4 sm:p-5 md:p-6 border border-motif-deep/10 shadow-sm">
                 <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl font-semibold text-motif-deep mb-2 sm:mb-3 uppercase tracking-[0.12em]`}>
-                  Adult Only
+                  Adults-Only Celebration
                 </h4>
                 <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-motif-deep/80 leading-relaxed`}>
                   Although we love your children, this will be an adult only occasion. If your child is invited their names will be on RSVP tab. We hope you take this opportunity to enjoy a date night and we appreciate you making prior arrangements.
@@ -788,7 +788,7 @@ export function Details() {
                 Arrival
                 </h4>
                 <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-motif-deep/80 leading-relaxed`}>
-                Kindly arrive by 1:00 PM so you may be comfortably seated before the ceremony begins promptly at 1:30 PM.
+                Kindly arrive by 1:00 PM so you may be comfortably seated before the ceremony begins promptly at 2:00 PM.
                 </p>
               </div>
             </div>

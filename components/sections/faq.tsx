@@ -40,7 +40,7 @@ const faqItems: FAQItem[] = [
   {
     question: "What time should I arrive for the ceremony?",
     answer:
-      `Our ceremony will begin promptly at ${siteConfig.ceremony.time}. We kindly ask guests to arrive 30–45 minutes earlier to allow enough time for parking, walking to the ceremony area, and finding your seats so we can begin on time.`,
+    "Our ceremony will begin promptly at 2:00 PM. We kindly ask guests to arrive by 1:00 PM to allow enough time for parking, walking to the ceremony area, and finding your seats so we can begin on time."
   },
   {
     question: "Where will the ceremony and reception take place?",
@@ -50,7 +50,7 @@ const faqItems: FAQItem[] = [
   {
     question: "Is there an entourage call time?",
     answer:
-    `Yes. We request our Principal Sponsors to arrive at ${siteConfig.ceremony.entourageTime} so we can prepapre and settle before the ceremony begins`
+    `Yes. We request our Principal Sponsors to arrive at 1:00 PM so we can prepapre and settle before the ceremony begins`
   },
   {
     question: "How do I RSVP?",

@@ -104,7 +104,7 @@ our future is a delightful blessing.
         <p className="text-xs sm:text-sm text-motif-cream/90 italic text-center">
             With love,
             <br />
-            {siteConfig.couple.brideNickname} and {siteConfig.couple.groomNickname}
+            {siteConfig.couple.groomNickname} and {siteConfig.couple.brideNickname}
           </p>
         </div>
       </div>

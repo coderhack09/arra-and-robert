@@ -352,7 +352,7 @@ export function Messages() {
             </h2>
           </div>
           <p className={`${cormorant.className} text-xs sm:text-sm md:text-base font-light max-w-3xl mx-auto leading-relaxed px-2 sm:px-4 mt-2 text-motif-cream`}>
-            Leave a short note for {coupleDisplayName}. Every wish and prayer becomes part of their forever story.
+            Leave a short note for {coupleDisplayName}. Every wish and prayer becomes part of their story forever.
           </p>
         </div>
 
