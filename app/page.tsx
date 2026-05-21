@@ -23,6 +23,7 @@ import { Navbar } from "@/components/navbar"
 import { AppState } from "@/components/types"
 import { SnapShare } from "@/components/sections/snap-share"
 import { CoupleVideo } from "@/components/sections/couple-video"
+import { Video } from "@/components/sections/video"
 
 const Silk = dynamic(() => import("@/components/silk"), { ssr: false })
 const GuestList = dynamic(() => import("@/components/sections/guest-list").then(mod => ({ default: mod.GuestList })), { ssr: false })
@@ -87,6 +88,7 @@ export default function Home() {
               {appState === AppState.DETAILS && <div className="h-12 sm:h-14 md:h-16" aria-hidden />}
               <MainHero />
               <Welcome />
+               <Video />
                <CoupleVideo /> 
               <LoveStory />
               <Countdown />
