@@ -28,7 +28,7 @@ export const siteConfig = {
   },
   details: {
     rsvp: {
-      deadline: "June 15, 2026.",
+      deadline: "June 15, 2026",
       contact: "Arra Rauvel P. Villarin",
       phone: "to be announced",
     },
